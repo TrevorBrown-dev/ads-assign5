@@ -36,6 +36,8 @@ public class TrevorBrown {
             printCell(i);
             printCell(InsertionSort.sort(randomArray(i)));
             printCell(ShellSort.sort(randomArray(i)));
+            printCell(HibbardSort.sort(randomArray(i)));
+            printCell(KnuthSort.sort(randomArray(i)));
 
             System.out.printf("%n");
         }
