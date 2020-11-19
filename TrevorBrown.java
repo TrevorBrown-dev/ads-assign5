@@ -4,13 +4,11 @@ public class TrevorBrown {
         int[] arr = new int[size];
 
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (Math.random() * 100000000);
+            arr[i] = (int) (Math.random() * 10000000);
         }
 
         return arr;
     }
-
-
 
     public static void printCell(int n) {
         printCell(n + "");
@@ -37,6 +35,7 @@ public class TrevorBrown {
         for (int i = 1000; i <= 10000; i += 1000) {
             printCell(i);
             printCell(InsertionSort.sort(randomArray(i)));
+            printCell(ShellSort.sort(randomArray(i)));
 
             System.out.printf("%n");
         }
