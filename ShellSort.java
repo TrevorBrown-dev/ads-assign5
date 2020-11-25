@@ -13,7 +13,7 @@ public class ShellSort implements Sortable {
                 }
                 arr[j] = temp;
                 // Might be unneccisary
-                count++;
+                // count++;
             }
         }
         return count;
